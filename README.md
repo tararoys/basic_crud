@@ -75,6 +75,18 @@ Theoretically, it is better to add migrations if you screw up the database.  For
 
 ##Models
 
+##RakeGenerateModel
+
+    rake generate:model NAME=User
+
+creates a blank model.
+
+```ruby
+    class #{model_name} < ActiveRecord::Base
+        # Remember to create a migration!
+    end
+```
+
 
 ##Views
 ##Controllers
