@@ -16,6 +16,8 @@ Use the [Sinatra Skeleton](https://github.com/tararoys/DBC_Sinatra_Skeleton)
 #Structure
 ##Migrations
 
+See Railsguides [Creating a Migration](http://guides.rubyonrails.org/migrations.html#writing-a-migration) for further info. 
+
 ### RakeGenerateMigration
 
 Running the command 
@@ -28,7 +30,6 @@ will create a migration file in the db/migrations folder. It will also create an
         def change
         end
     end
-
 
 
 ###CreateTable 
@@ -62,9 +63,19 @@ will create a migration file in the db/migrations folder. It will also create an
   end
 ```
 
+###RakeDBYolo
+
+    rake db:drop
+    rake db:create
+    rake db:migrate
+    rake db:seed
+
+Theoretically, it is better to add migrations if you screw up the database.  For now, it's easier to drop the database, rewrite the bad migration, and create the database again.
 
 
 ##Models
+
+
 ##Views
 ##Controllers
 
