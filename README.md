@@ -75,7 +75,7 @@ Theoretically, it is better to add migrations if you screw up the database.  For
 
 ##Models
 
-##RakeGenerateModel
+###RakeGenerateModel
 
     rake generate:model NAME=User
 
@@ -86,6 +86,35 @@ creates a blank model.
         # Remember to create a migration!
     end
 ```
+
+###ModelAssociations 
+
+####BasicModelassociations
+
+```ruby
+class Survey < ActiveRecord::Base
+  belongs_to :user, :foreign_key => "users_id"
+  has_many :participants
+  has_many :questions
+  has_many :users, :through => :participants
+end
+```
+
+####RenameModelAssociations
+
+```ruby
+class Pet < ActiveRecord::Base
+  has_many :dogs
+  has_many :dog_breeds, :through => :dogs, :source => :breeds
+end
+```
+
+###ModelValidations
+
+
+
+
+###
 
 
 ##Views
