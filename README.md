@@ -115,6 +115,20 @@ end
 
 ###ModelValidations
 
+####BasicValidations
+
+class Person < ActiveRecord::Base
+  validates :username, :length => { :minimum => 3, :message => "must be at least 3 characters, fool!" }, uniqueness: true   validates :entered_password, :length => { :minimum => 6 } #source: SurveyDBCGroupProject
+
+  validates :email, :presence => true
+  validates :email, :uniqueness => true
+
+  validates :email,
+            :format => {
+              :with    => /^([^\s]+)((?:[-a-z0-9]\.)[a-z]{2,})$/i,
+              :message => "Only letters allowed" }#[better to validate emails with a gem]( http://www.stormconsultancy.co.uk/blog/development/validating-email-addresses-in-rails/)
+  validates :password, :presence => true
+end 
 
 
 ###
