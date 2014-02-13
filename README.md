@@ -89,6 +89,8 @@ creates a blank model.
 
 ###ModelAssociations 
 
+
+
 ####BasicModelassociations
 
 ```ruby
@@ -109,8 +111,9 @@ class Pet < ActiveRecord::Base
 end
 ```
 
-###ModelValidations
+[Renamingthrough associations using source](http://stackoverflow.com/questions/4632408/need-help-to-understand-source-option-of-has-one-has-many-through-of-rails)
 
+###ModelValidations
 
 
 
