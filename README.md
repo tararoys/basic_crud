@@ -120,6 +120,7 @@ end
 
 ####BasicValidations
 
+```ruby
 class Person < ActiveRecord::Base
   validates :username, :length => { :minimum => 3, :message => "must be at least 3 characters, fool!" }, uniqueness: true   validates :entered_password, :length => { :minimum => 6 } #source: SurveyDBCGroupProject
 
@@ -132,6 +133,7 @@ class Person < ActiveRecord::Base
               :message => "Only letters allowed" }#[better to validate emails with a gem]( http://www.stormconsultancy.co.uk/blog/development/validating-email-addresses-in-rails/)
   validates :password, :presence => true
 end 
+```
 
 
 
