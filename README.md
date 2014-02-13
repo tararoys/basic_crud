@@ -53,6 +53,16 @@ will create a migration file in the db/migrations folder. It will also create an
   end
 ```
 
+###AddColumn
+```ruby
+  class AddPartNumberToProducts < ActiveRecord::Migration
+    def change
+      add_column :things, :widgit, :string #add_column tablename columnname columntype
+    end
+  end
+```
+
+
 
 ##Models
 ##Views
