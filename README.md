@@ -11,6 +11,7 @@ Use the [SQL Designer](https://socrates.devbootcamp.com/sql.html) to design your
 
 #Setup
 ##Skeleton
+Use the [Sinatra Skeleton](https://github.com/tararoys/DBC_Sinatra_Skeleton)
 
 #Structure
 ##Migrations
