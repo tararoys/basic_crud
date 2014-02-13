@@ -177,6 +177,8 @@ end
 ###Git
 ###Testing
 
+For an example of how to kludge together some testing into a CRUD app, see local copy of [SurveyDBC](https://github.com/tararoys/SurveyDBC/tree/master/app) app. 
+
 
 
 
