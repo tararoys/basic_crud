@@ -7,6 +7,7 @@ Giant Tutorial for Basic Sinatra Crud Apps
 ##UserStories
 ##Wireframe
 ##Schema
+Use the [SQL Designer](https://socrates.devbootcamp.com/sql.html) to design your schema. 
 
 #Setup
 ##Skeleton
