@@ -16,6 +16,21 @@ Use the [Sinatra Skeleton](https://github.com/tararoys/DBC_Sinatra_Skeleton)
 #Structure
 ##Migrations
 
+### RakeGenerateMigration
+
+Running the command 
+
+    rake generate:migration NAME=create_things
+
+will create a migration file in the db/migrations folder. It will also create an empty migration in that file that looks like this: 
+
+    class #{name} < ActiveRecord::Migration
+        def change
+        end
+    end
+
+
+
 ###CreateTable 
   
 ```ruby
@@ -37,6 +52,7 @@ Use the [Sinatra Skeleton](https://github.com/tararoys/DBC_Sinatra_Skeleton)
     end
   end
 ```
+
 
 ##Models
 ##Views
