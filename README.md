@@ -131,10 +131,29 @@ class Person < ActiveRecord::Base
 end 
 
 
-###
-
 
 ##Views
+
+###BasicForms
+
+####LoginForm
+
+[login form](https://github.com/tararoys/SurveyDBC/blob/master/app/views/sign_up.erb#L5:)
+
+```html
+<form id="sign-up" method="post" action="/users">
+  <input type="text" name="user[username]" placeholder="Username" value="<%= @user.username %>"> <!-- predict that this page doubles as an edit user account page -->
+  <span id="name-errors" class="errors"></span>
+  <br>
+
+  <input type="password" name="user[password]" placeholder="Password">
+  <span id="entered_password-errors" class="errors"></span>
+  <br>
+
+  <div class="submit"><input type="submit" value="Sign Up"></div>
+</form>
+```
+
 ##Controllers
 
 #Agile
