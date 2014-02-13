@@ -154,6 +154,21 @@ end
 </form>
 ```
 
+####AJAX
+
+(Jquery.ajax documentation)[http://api.jquery.com/jQuery.ajax/]
+
+```javascript
+    $.ajax({
+      type: "POST",
+      url: "some.php",
+      data: { name: "John", location: "Boston" }
+    })
+      .done(function( msg ) {
+        alert( "Data Saved: " + msg );
+      });
+```
+
 ##Controllers
 
 #Agile
